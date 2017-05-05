@@ -1,0 +1,14 @@
+{
+  "name": "homebrew-monitor",
+  "version": "0.1.0",
+  "description": "IOT homebrew monitoring dashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'No tests!'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "homebrew-monitor-auth": "git+ssh://git@github.com:cgpuglie/homebrew-monitor-auth.git"
+  }
+}
