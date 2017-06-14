@@ -9,7 +9,5 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "homebrew-monitor-auth": "git+ssh://git@github.com:cgpuglie/homebrew-monitor-auth.git",
-    "homebrew-monitor-rest": "git+ssh://git@github.com:cgpuglie/homebrew-monitor-rest.git"
   }
 }
