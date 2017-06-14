@@ -4,13 +4,14 @@ An Microservice based IOT monitor for homebrewing. Gather statistics from sensor
 
 Will deploy to Docker Swarm on Google's GCE using my [GCE Docker Swarm automation](https://github.com/cgpuglie/GCP-Terraform-DockerSwarm) and possibly to Kubernetes on Google's GKE. This repository will house the kubernetes yaml files, Docker stack-files, Integration tests, and CircleCI configs to Test and release this code in an automated fashion.
 ### Microservice Repositories
-This app is made up of a variety of microservices running in Docker containers. Each microservice is versioned independently, and contains unit tests that simulate the interaction between services.
+This app is made up of a variety of microservices running in Docker containers. Each microservice is versioned independently, and contains unit tests that simulate the interaction between services. Each microservice will be published to Dockerhub by .circleci when a version is tagged if all tests are successful.
 
 Here are the repositories:
 
 #### Work In Progress
 [homebrew-monitor-auth](https://github.com/cgpuglie/homebrew-monitor-auth): Provides APIs to authenticate and authorize an admin user.   
-[homebrew-monitor-rest](https://github.com/cgpuglie/homebrew-monitor-rest): Provides REST apis to accept and report statistics from Raspberry Pi's sensors.
+[homebrew-monitor-rest](https://github.com/cgpuglie/homebrew-monitor-rest): Provides REST apis to accept and report statistics from Raspberry Pi's sensors.  
+[homebrew-monitor-common](https://github.com/cgpuglie/homebrew-monitor-common): Exports shared logic for use in other services.
 
 #### Future releases
 **Raspberry Pi Agent**: Application to gather data from Raspberry Pi's sensors and send to REST API.  
